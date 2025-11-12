@@ -1,22 +1,22 @@
 export interface Address {
-  state: string;
   city: string;
   country: string;
 }
 
-export interface Offers {
-  bed: string;
-  shower: string;
-  occupants: string;
+export interface Review {
+  name: string;
+  avatar: string;
+  rating: number;
+  comment: string;
 }
 
 export interface PropertyProps {
   name: string;
-  address: Address;
+  image: string;
   rating: number;
+  address: Address;
+  description: string;
   category: string[];
   price: number;
-  offers: Offers;
-  image: string;
-  discount?: string;
+  reviews: Review[];
 }
